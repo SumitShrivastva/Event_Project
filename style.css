@@ -1,0 +1,108 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-height: 1800px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 2.5em;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+form input, form select, form button {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form select:focus {
+  border-color: #4999d2;
+  box-shadow: 0 0 8px rgba(73, 153, 210, 0.3);
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.expense-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.expense-table th, .expense-table td {
+  padding: 15px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+.expense-table th {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-weight: bold;
+}
+
+.total-amount {
+  text-align: right;
+  font-size: 1.25em;
+  color: #333333;
+}
+
+.filter {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.filter label {
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+.filter select {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter select:focus {
+  border-color: #4999d2;
+  box-shadow: 0 0 8px rgba(73, 153, 210, 0.3);
+}
